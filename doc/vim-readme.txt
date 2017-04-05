@@ -20,8 +20,8 @@ USAGE (2)                                                           *Usage*
 
 Open a README for a specified repository by executing the following in vim:
 
-:README "<username>/<reponame>"
+:README <username>/<reponame>
 
 i.e.
 
-:README "anhari/vim-readme"
+:README anhari/vim-readme
