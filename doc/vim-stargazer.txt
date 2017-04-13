@@ -1,11 +1,11 @@
-*vim-readme.txt*
+*vim-stargazer.txt*
 
 Author:  Michael Anhari
 
-                            vim-readme
+                            vim-stargazer
 
 ==============================================================================
-CONTENTS                                                 *vim-readme-contents*
+CONTENTS                                                *vim-stargazer-contents*
 
       1. About............................ |About|
       2. Usage ........................... |Usage|
@@ -65,6 +65,6 @@ Fuzzy find a README your list of starred repositories, created via the
 
 Open a specific repository's readme, i.e.:
 
-:OpenREADME anhari/vim-readme
+:OpenREADME anhari/vim-stargazer
 
 --------------------------------------------------------------------------------

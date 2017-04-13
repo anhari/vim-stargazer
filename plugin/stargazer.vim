@@ -1,6 +1,5 @@
-" Must pass the repo as a string, i.e. 'anhari/vim-readme'
 function! FetchStars(username)
-  execute 'silent !ruby ~/.vim/bundle/vim-readme/lib/fetch_star_list.rb ' . a:username
+  execute 'silent !ruby ~/.vim/bundle/vim-stargazer/lib/fetch_star_list.rb ' . a:username
 
   if !empty(glob("~/.starred_repositories"))
     echo 'Fetching of your starred repositores is complete!'

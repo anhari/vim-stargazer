@@ -1,8 +1,8 @@
-# README.vim
+# stargazer.vim
 
-Navigate to repository READMEs straight outta vim.
+Navigate to repository READMEs for your starred repositories straight outta vim.
 
-<img src="https://github.com/anhari/vim-readme/blob/master/vim-readme.gif?raw=true" width="500">
+<img src="https://github.com/anhari/vim-stargazer/blob/master/vim-readme.gif?raw=true" width="500">
 
 ## Dependencies
 
@@ -42,4 +42,4 @@ Fuzzy find a README your list of starred repositories, created via the
 
     :OpenREADME <username>/<repository_name>
 
-Open a specific repository's readme, i.e.: `:OpenREADME anhari/vim-readme`
+Open a specific repository's readme, i.e.: `:OpenREADME anhari/vim-stargazer`
