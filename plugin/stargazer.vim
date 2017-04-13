@@ -19,7 +19,7 @@ endfunction
 function! Stargaze()
   if !empty(glob("~/.starred_repositories"))
     call fzf#run({
-        \ 'source': 'grep --line-buffered --color=never -hrsi --include=.starred_repositories "" * ~/.starred_repositories',
+        \ 'source': 'grep --line-buffered --color=never -hsi --include=.starred_repositories "" * ~/.starred_repositories',
         \ 'down':   '40%',
         \ 'sink':   function('OpenStarredReadme')})
   else
