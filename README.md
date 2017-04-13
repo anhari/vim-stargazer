@@ -2,7 +2,7 @@
 
 Navigate to repository READMEs for your starred repositories straight outta vim.
 
-<img src="https://github.com/anhari/vim-stargazer/blob/master/vim-readme.gif?raw=true" width="500">
+<img src="https://github.com/anhari/vim-stargazer/blob/master/vim-stargazer.gif?raw=true" width="500">
 
 ## Dependencies
 
