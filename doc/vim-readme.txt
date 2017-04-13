@@ -23,10 +23,10 @@ For full functionality, this plugin requires fzf[1] and octokit[2].
 [1] https://github.com/junegunn/fzf
 [2] https://github.com/octokit/octokit.rb
 
-The heart of this plugin lies in the *FindREADME* command, which will allow you
+The heart of this plugin lies in the |FindREADME| command, which will allow you
 to fuzzy find (using fzf) a repository you have starred on GitHub and navigate
 to its README on selection. Before using this command, you'll have to populate
-these stars using the *FetchStars* command.
+these stars using the |FetchStars| command.
 
 You can also manually navigate to repository using the :OpenREADME command, like
 so:
@@ -57,7 +57,7 @@ Open a README of your starred repositories:
 :FindREADME
 
 Fuzzy find a README your list of starred repositories, created via the
-*FetchStars* method.
+|FetchStars| method.
 
 --------------------------------------------------------------------------------
 
