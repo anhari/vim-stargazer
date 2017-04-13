@@ -2,7 +2,7 @@
 function! FetchStars(username)
   execute 'silent !ruby ~/.vim/bundle/vim-readme/lib/fetch_star_list.rb ' . a:username
 
-  if filereadable("starred_repositories.txt")
+  if !empty(glob("~/.starred_repositories"))
     echo 'Fetching of your starred repositores is complete!'
   else
     echo 'Fetch unsuccessful.'
@@ -18,9 +18,9 @@ function! OpenStarredReadme(readme)
 endfunction
 
 function! FindREADME()
-  if filereadable("starred_repositories.txt")
+  if !empty(glob("~/.starred_repositories"))
     call fzf#run({
-        \ 'source': 'grep --line-buffered --color=never -hrsi --include=starred_repositories.txt "" * ',
+        \ 'source': 'grep --line-buffered --color=never -hrsi --include=.starred_repositories "" * ~/.starred_repositories',
         \ 'down':   '40%',
         \ 'sink':   function('OpenStarredReadme')})
   else

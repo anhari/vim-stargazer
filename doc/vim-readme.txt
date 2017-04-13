@@ -45,8 +45,8 @@ This plugin has three commands:
 --------------------------------------------------------------------------------
 2.1  FetchStars~                                                    *FetchStars*
 
-This will fetch a list of your starred repositories and create a file in the
-root of this vim plugin named starred_repostories.txt.
+This will fetch and store a list of your starred repositories in
+`~/.starred_repositories`.
 
 --------------------------------------------------------------------------------
 
