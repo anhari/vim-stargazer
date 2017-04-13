@@ -2,7 +2,7 @@
 
 Navigate to repository READMEs straight outta vim.
 
-![vim-readme opening readmes](./vim-readme.gif =250x)
+<img src="https://github.com/anhari/vim-readme/blob/master/vim-readme.gif?raw=true" width="500">
 
 ## Dependencies
 
