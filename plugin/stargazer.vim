@@ -8,7 +8,7 @@ function! s:InitVariable(var, value)
 endfunction
 
 function! s:InitializeVariables()
-  call s:InitVariable("g:StarGazerNavigateToREADME", 0)
+  call s:InitVariable("g:StargazerNavigateToREADME", 0)
 endfunction
 
 function! FetchStars(github_username)
@@ -22,7 +22,7 @@ function! FetchStars(github_username)
 endfunction
 
 function! OpenRepository(github_user_and_repository)
-  if g:StarGazerNavigateToREADME
+  if g:StargazerNavigateToREADME
     execute 'silent !open https:\/\/github.com\/' . a:github_user_and_repository . '\#readme'
   else
     execute 'silent !open https:\/\/github.com\/' . a:github_user_and_repository

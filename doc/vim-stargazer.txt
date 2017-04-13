@@ -36,7 +36,7 @@ like so:
 Also, you can navigate directly to a repository's readme section by default by
 adding the following to your vimrc:
 
-`let g:StarGazerNavigateToREADME = 1`
+`let g:StargazerNavigateToREADME = 1`
 
 ==============================================================================
 USAGE (2)                                                           *Usage*

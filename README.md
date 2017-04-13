@@ -1,7 +1,6 @@
 # stargazer.vim
 
-Fuzzy find and navigate to repository READMEs for your starred repositories,
-straight outta vim.
+Fuzzy find and navigate to your starred repositories, straight outta vim.
 
 <img src="https://github.com/anhari/vim-stargazer/blob/master/vim-stargazer.gif?raw=true" width="500">
 
@@ -44,3 +43,12 @@ Fuzzy find a repository from your list of starred repositories, created via the
     :OpenRepository <github_username>/<repository_name>
 
 Open a specific repository, i.e.: `:OpenRepository anhari/vim-stargazer`
+
+## Navigate directly to README sections
+
+You also have the option to navigate directly to a repository's README by
+setting the following global vim variable:
+
+`let g:StargazerNavigateToREADME = 1`
+
+<img src="https://github.com/anhari/vim-stargazer/blob/master/vim-stargazer-readme.gif?raw=true" width="500">
