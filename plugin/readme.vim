@@ -1,7 +1,12 @@
 " Must pass the repo as a string, i.e. 'anhari/vim-readme'
 function! FetchStars(username)
   execute 'silent !ruby ~/.vim/bundle/vim-readme/lib/fetch_star_list.rb ' . a:username
-  echo 'Fetching of your starred repositores is complete!'
+
+  if filereadable("starred_repositories.txt")
+    echo 'Fetching of your starred repositores is complete!'
+  else
+    echo 'Fetch unsuccessful.'
+  endif
 endfunction
 
 function! OpenREADME(user_and_repo)
