@@ -3,9 +3,9 @@ require_relative '../../lib/star_fetcher'
 
 describe StarFetcher do
   it "creates a file with a user's stars" do
-    user = "anhari"
+    github_username = "anhari"
 
-    expect(StarFetcher.fetch_stars_for_user(user: user)).to eq %w[
+    expect(StarFetcher.fetch_stars_for_user(user: github_username)).to eq %w[
       lokesh/lightbox2
       jonathanslenders/ptpython
       lpil/dogma

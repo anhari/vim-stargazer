@@ -14,9 +14,9 @@ straight outta vim.
 
 This plugin has three commands:
 
-    :FetchStars <username>
+    :FetchStars <github_username>
     :Stargaze
-    :OpenREADME <username>/<reponame>
+    :OpenRepository <github_username>/<repository_name>
 
 The heart of this plugin lies in the `:Stargaze` command, which will allow you
 to fuzzy find (using fzf) a repository you have starred on GitHub and navigate
@@ -35,12 +35,12 @@ This will fetch and store a list of your starred repositories in
 
     :Stargaze
 
-Fuzzy find a README your list of starred repositories, created via the
+Fuzzy find a repository from your list of starred repositories, created via the
 `FetchStars` method.
 
 
-### OpenREADME
+### OpenRepository
 
-    :OpenREADME <username>/<repository_name>
+    :OpenRepository <github_username>/<repository_name>
 
-Open a specific repository's readme, i.e.: `:OpenREADME anhari/vim-stargazer`
+Open a specific repository, i.e.: `:OpenRepository anhari/vim-stargazer`
