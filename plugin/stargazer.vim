@@ -16,7 +16,7 @@ function! OpenStarredReadme(readme)
   execute 'silent !open https:\/\/github.com\/' . a:readme . '\#readme'
 endfunction
 
-function! FindREADME()
+function! Stargaze()
   if !empty(glob("~/.starred_repositories"))
     call fzf#run({
         \ 'source': 'grep --line-buffered --color=never -hrsi --include=.starred_repositories "" * ~/.starred_repositories',
@@ -30,4 +30,4 @@ endfunction
 
 command! -nargs=1 OpenREADME call OpenREADME(<f-args>)
 command! -nargs=1 FetchStars call FetchStars(<f-args>)
-command! -nargs=0 FindREADME call FindREADME(<f-args>)
+command! -nargs=0 Stargaze call Stargaze(<f-args>)

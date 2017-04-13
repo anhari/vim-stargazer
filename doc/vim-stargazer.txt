@@ -10,7 +10,7 @@ CONTENTS                                                *vim-stargazer-contents*
       1. About............................ |About|
       2. Usage ........................... |Usage|
         2.1  ............................... |FetchStars|
-        2.2  ............................... |FindREADME|
+        2.2  ............................... |Stargaze|
         2.3  ............................... |OpenREADME|
 
 ==============================================================================
@@ -23,7 +23,7 @@ For full functionality, this plugin requires fzf[1] and octokit[2].
 [1] https://github.com/junegunn/fzf
 [2] https://github.com/octokit/octokit.rb
 
-The heart of this plugin lies in the |FindREADME| command, which will allow you
+The heart of this plugin lies in the |Stargaze| command, which will allow you
 to fuzzy find (using fzf) a repository you have starred on GitHub and navigate
 to its README on selection. Before using this command, you'll have to populate
 these stars using the |FetchStars| command.
@@ -39,7 +39,7 @@ USAGE (2)                                                           *Usage*
 This plugin has three commands:
 
 :FetchStars <username>
-:FindREADME
+:Stargaze
 :OpenREADME <username>/<reponame>
 
 --------------------------------------------------------------------------------
@@ -50,11 +50,11 @@ This will fetch and store a list of your starred repositories in
 
 --------------------------------------------------------------------------------
 
-2.2  FindREADME~                                                    *FindREADME*
+2.2  Stargaze~                                                        *Stargaze*
 
 Open a README of your starred repositories:
 
-:FindREADME
+:Stargaze
 
 Fuzzy find a README your list of starred repositories, created via the
 |FetchStars| method.
