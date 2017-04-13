@@ -11,12 +11,12 @@ CONTENTS                                                *vim-stargazer-contents*
       2. Usage ........................... |Usage|
         2.1  ............................... |FetchStars|
         2.2  ............................... |Stargaze|
-        2.3  ............................... |OpenREADME|
+        2.3  ............................... |OpenRepository|
 
 ==============================================================================
 ABOUT (1)                                                           *About*
 
-Navigate to repository READMEs, straight outta vim.
+Navigate to your starred repositories, straight outta vim.
 
 For full functionality, this plugin requires fzf[1] and octokit[2].
 
@@ -25,22 +25,27 @@ For full functionality, this plugin requires fzf[1] and octokit[2].
 
 The heart of this plugin lies in the |Stargaze| command, which will allow you
 to fuzzy find (using fzf) a repository you have starred on GitHub and navigate
-to its README on selection. Before using this command, you'll have to populate
+to its repository on selection. Before using this command, you'll have to populate
 these stars using the |FetchStars| command.
 
-You can also manually navigate to repository using the :OpenREADME command, like
-so:
+You can also manually navigate to repository using the :OpenRepository command,
+like so:
 
-:OpenREADME <username>/<reponame>
+:OpenRepository <github_username>/<repository_name>
+
+Also, you can navigate directly to a repository's readme section by default by
+adding the following to your vimrc:
+
+`let g:StarGazerNavigateToREADME = 1`
 
 ==============================================================================
 USAGE (2)                                                           *Usage*
 
 This plugin has three commands:
 
-:FetchStars <username>
+:FetchStars <github_username>
 :Stargaze
-:OpenREADME <username>/<reponame>
+:OpenRepository <github_username>/<repository_name>
 
 --------------------------------------------------------------------------------
 2.1  FetchStars~                                                    *FetchStars*
@@ -61,10 +66,10 @@ Fuzzy find a README your list of starred repositories, created via the
 
 --------------------------------------------------------------------------------
 
-2.3  OpenREADME~                                                    *OpenREADME*
+2.3  OpenRepository~                                            *OpenRepository*
 
-Open a specific repository's readme, i.e.:
+Open a specific repository, i.e.:
 
-:OpenREADME anhari/vim-stargazer
+:OpenRepository anhari/vim-stargazer
 
 --------------------------------------------------------------------------------
