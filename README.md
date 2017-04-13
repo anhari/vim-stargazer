@@ -2,7 +2,7 @@
 
 Navigate to repository READMEs straight outta vim.
 
-![vim-readme opening readmes](./vim-readme.gif)
+![vim-readme opening readmes](./vim-readme.gif =250x)
 
 ## Dependencies
 
