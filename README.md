@@ -6,9 +6,9 @@ Fuzzy find and navigate to your starred repositories, straight outta vim.
 
 ## Installation
 
-Stargazer utilizes the Octokit gem to pull down your starred repositories, and
-utilizes fzf to fuzzy find those starred repositories. You'll need to [install
-fzf] and install octokit via:
+Stargazer utilizes the [Octokit] gem to pull down your starred repositories, and
+utilizes [fzf] to fuzzy find those starred repositories. You'll need to [install
+fzf] and install Octokit via:
 
 ```
 gem install octokit
