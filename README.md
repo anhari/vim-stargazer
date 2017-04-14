@@ -4,10 +4,29 @@ Fuzzy find and navigate to your starred repositories, straight outta vim.
 
 <img src="https://github.com/anhari/vim-stargazer/blob/master/vim-stargazer.gif?raw=true" width="500">
 
-## Dependencies
+## Installation
 
-* [fzf](https://github.com/junegunn/fzf)
-* [octokit](https://github.com/octokit/octokit.rb)
+Stargazer utilizes the Octokit gem to pull down your starred repositories, and
+utilizes fzf to fuzzy find those starred repositories. You'll need to [install
+fzf] and install octokit via:
+
+```
+gem install octokit
+```
+
+Using vim-plug:
+
+``` vim
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'anhari/vim-stargazer'
+```
+
+[fzf]: https://github.com/junegunn/fzf
+[install fzf]: https://github.com/junegunn/fzf#installation
+[Octokit]: https://github.com/octokit/octokit.rb
+[vim-plug]: https://github.com/junegunn/vim-plug
+
 
 ## Usage
 
