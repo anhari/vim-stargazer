@@ -14,7 +14,7 @@ fzf] and install Octokit via:
 gem install octokit
 ```
 
-Using vim-plug:
+Then, install the required vim plugins using vim-plug:
 
 ``` vim
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
