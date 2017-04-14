@@ -22,12 +22,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'anhari/vim-stargazer'
 ```
 
-[fzf]: https://github.com/junegunn/fzf
-[install fzf]: https://github.com/junegunn/fzf#installation
-[Octokit]: https://github.com/octokit/octokit.rb
-[vim-plug]: https://github.com/junegunn/vim-plug
-
-
 ## Usage
 
 This plugin has three commands:
@@ -37,9 +31,9 @@ This plugin has three commands:
     :OpenRepository <github_username>/<repository_name>
 
 The heart of this plugin lies in the `:Stargaze` command, which will allow you
-to fuzzy find (using fzf) a repository you have starred on GitHub and navigate
-to its README on selection. Before using this command, you'll have to populate
-these stars using the `:FetchStars` command.
+to fuzzy find (using [fzf]) a repository you have starred on GitHub and navigate
+to its page on GitHub on selection. Before using this command, you'll have to
+populate these stars using the `:FetchStars <github_username` command.
 
 ### FetchStars
 
@@ -71,3 +65,8 @@ setting the following global vim variable:
 `let g:StargazerNavigateToREADME = 1`
 
 <img src="https://github.com/anhari/vim-stargazer/blob/master/vim-stargazer-readme.gif?raw=true" width="500">
+
+[fzf]: https://github.com/junegunn/fzf
+[install fzf]: https://github.com/junegunn/fzf#installation
+[Octokit]: https://github.com/octokit/octokit.rb
+[vim-plug]: https://github.com/junegunn/vim-plug
