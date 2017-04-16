@@ -12,6 +12,7 @@ function! s:InitializeVariables()
 endfunction
 
 function! FetchStars(github_username)
+  echo 'Fetching your starred repositories...'
   execute 'silent !ruby ~/.vim/bundle/vim-stargazer/lib/fetch_star_list.rb ' . a:github_username
 
   if !empty(glob("~/.starred_repositories"))
